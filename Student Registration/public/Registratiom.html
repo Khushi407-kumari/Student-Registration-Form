@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="registrationForm" novalidate>
+            <!-- Full Name Field -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                <div class="error-message" id="fullNameError"></div>
+            </div>
+            <div class="form-group">
+                <label for="Gender" required >Gender:
+                    <p style="display: flex; font-weight: 200; ">
+                        <input type="radio" id="Gender" value="Male">Male
+                    <input type="radio" id="Gender" value="Male">Female
+                    <input type="radio" id="Gender" value="Male">Others</p>
+                </label>
+                <div class="error-message" id="GenderError"></div>
+            </div>
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+            <!-- Phone Field -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <div class="error-message" id="phoneError"></div>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+    </div>
+    <script src="valid.js"> </script>
+</body>
+
+</html>
